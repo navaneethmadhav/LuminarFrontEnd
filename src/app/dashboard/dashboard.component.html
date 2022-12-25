@@ -1,0 +1,116 @@
+<button class="btn btn-warning" style="float: right;" (click)="logout()">Logout</button>
+<button class="btn btn-danger" style="float: right; margin-right: 20px;" (click)="delete()">Delete</button>
+
+<div class="parent">
+  <h1>Welcome {{user}}</h1>
+  <h4>System Date & Time : {{sdate | date:'short'}}</h4>
+  <app-delete [item]="email" (onCancel)="onCancel()"></app-delete>
+    <div class="child" [ngClass]="email? 'style1':''">
+        <div class="card" style="width: 350px; height: 700px; background-color: rgb(242, 242, 242);">
+            <div class="card-img-div">
+                <img src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fe964743-1e77-427b-aab2-274f850b0e70-asset-1.svg" class="card-img-top" alt="software testing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Software Testing Specialist</h5><br><br>
+              <p class="card-text">Manual Testing , Java foundations, Mobile Testing, Automation Testing, Selenium IDE, Selenium Web driver, Selenium Advanced <br><br><b>Next Batch:</b><br><br><b>Cochin :</b> Nov 16th 2022 (Offline & Online) | Sep 21st 2022 (Online Available) <br>
+              <b>Calicut :</b> Not Available <br>
+                <b>Duration:</b> 
+                4 Months, 5 Days a Week, 2-3 Hours/day <br>
+                <b>Course Fee:</b><br>
+                <b>Offline :</b> 31500 <br>
+                <b>Online :</b> 29500</p>
+              <a routerLink="#" class="btn btn-primary btn1" role="button">View more</a>
+            </div>
+        </div>
+    </div>
+    <div class="child" [ngClass]="email? 'style1':''">
+        <div class="card" style="width: 350px; height: 700px; background-color: rgb(242, 242, 242);">
+            <div class="card-img-div">
+                <img src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/c678b72e-d125-46c0-8598-30c0f1989d2b-Group%201.svg" class="card-img-top" alt="software testing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MEA(R)N Stack Web Development Expert - Angular & React</h5><br><br>
+              <p class="card-text">HTML, CSS, Bootstrap, Javascript, Typescript, Git, Angular, React.js, Node.js, Express.js & MongoDB <br><br><b>Next Batch:</b><br><br><b>Cochin :</b> Dec 14th 2022 (Offline & Online) | Sep 21st 2022 (Online Available) <br>
+              <b>Calicut :</b> Not Available <br>
+                <b>Duration:</b> 
+                4 Months, 5 Days a Week, 2-3 Hours/day <br>
+                <b>Course Fee:</b><br>
+                <b>Offline :</b> 41500 <br>
+                <b>Online :</b> 39500</p>
+              <a routerLink="#" class="btn btn-primary btn1" role="button">View more</a>
+            </div>
+        </div>
+    </div>
+    <div class="child" [ngClass]="email? 'style1':''">
+        <div class="card" style="width: 350px; height: 700px; background-color: rgb(242, 242, 242);">
+            <div class="card-img-div">
+                <img src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/b329bfb7-fbc1-4623-bfa2-1ee94814efe4-asset-2.svg" class="card-img-top" alt="software testing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Data Science - ML - AI - Big Data with Cloud & TABLEAU</h5><br><br>
+              <p class="card-text">Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine Learning, Deep<br><br><b>Next Batch:</b><br><br><b>Cochin :</b> Jan 5th 2023 (Offline & Online) | Oct 12th 2022 (Online Available) <br>
+              <b>Calicut :</b> Not Available <br>
+                <b>Duration:</b> 
+                6 Months, 6 Days a Week, 2-3 Hours/day <br>
+                <b>Course Fee:</b><br>
+                <b>Offline :</b> 61500 <br>
+                <b>Online :</b> 56000</p>
+              <a routerLink="#" class="btn btn-primary btn1" role="button">View more</a>
+            </div>
+        </div>
+    </div>
+    <div class="child" [ngClass]="email? 'style1':''">
+        <div class="card" style="width: 350px; height: 700px; background-color: rgb(242, 242, 242);">
+            <div class="card-img-div">
+                <img src="https://luminartechnolabbucket.s3.amazonaws.com/8f1944da-45af-4b90-a4c7-eb201a510432-python-svgrepo-com-2.svg" class="card-img-top" alt="software testing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Python Django - Angular- Full Stack Web Development Expert</h5><br><br>
+              <p class="card-text">Core Python, Basics of Programming, Unix Commands, Advanced Python, Django Framework, REST API, Git, Angular, Web<br><br><b>Next Batch:</b><br><br><b>Cochin :</b> Dec 14th 2022 (Offline & Online) | Sept 21th 2022 (Online Available) <br>
+              <b>Calicut :</b> Not Available <br>
+                <b>Duration:</b> 
+                5 Months, 5 Days a Week, 2-3 Hours/day <br>
+                <b>Course Fee:</b><br>
+                <b>Offline :</b> 35000 <br>
+                <b>Online :</b> 29500</p>
+              <a routerLink="#" class="btn btn-primary btn1" role="button">View more</a>
+            </div>
+        </div>
+    </div>
+    <div class="child" [ngClass]="email? 'style1':''">
+        <div class="card" style="width: 350px; height: 700px; background-color: rgb(242, 242, 242);">
+            <div class="card-img-div">
+                <img src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/fba6e2b7-cbef-4864-9aa2-8d42b615a363-1797049.png" class="card-img-top" alt="software testing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Asp.net MVC with Angular - Full Stack</h5><br><br>
+              <p class="card-text">C# Programming, Object Oriented Development, ASP .Net Web and Windows Application Development, MS SQL, MVC<br><br><b>Next Batch:</b><br><br><b>Cochin :</b> Nov 16th 2022 (Offline & Online) <br>
+              <b>Calicut :</b> Not Available <br>
+                <b>Duration:</b> 
+                4 Months, 5 Days a Week, 2-3 Hours/day <br>
+                <b>Course Fee:</b><br>
+                <b>Offline :</b> 25000 <br>
+                <b>Online :</b> 25000</p>
+              <a routerLink="./dashboard.component.html" class="btn btn-primary btn1" role="button">View more</a>
+            </div>
+        </div>
+    </div>
+    <div class="child" [ngClass]="email? 'style1':''">
+        <div class="card" style="width: 350px; height: 700px; background-color: rgb(242, 242, 242);">
+            <div class="card-img-div">
+                <img src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/9e12911e-0b95-4ba2-a6b8-4c5b75b99c42-android-logo-svgrepo-com.svg" class="card-img-top" alt="software testing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Android Developer Expert Training In Kochi- Flutter</h5><br><br>
+              <p class="card-text">Dart, Flutter Introduction to Android, Android Studio, AndroidManifest.xml, Directories, Layout Designing, Basics &<br><br><b>Next Batch:</b><br><br><b>Cochin :</b> Nov 16th 2022 (Offline & Online) <br>
+              <b>Calicut :</b> Not Available <br>
+                <b>Duration:</b> 
+                3 Months, (2-3 Hours/day) <br>
+                <b>Course Fee:</b><br>
+                <b>Offline :</b> 25000 <br>
+                <b>Online :</b> 25000</p>
+              <a routerLink="#" class="btn btn-primary btn1" role="button">View more</a>
+            </div>
+        </div>
+    </div>
+</div>

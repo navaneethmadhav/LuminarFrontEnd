@@ -1,0 +1,25 @@
+.luminar_logo{
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid darkorchid; 
+    border-radius: 50px; 
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 710px;
+}
+.register{
+    text-align: center;
+    box-shadow: 10px 10px 10px;
+    border-radius: 20px; 
+    height: auto;
+    border: 5px solid darkorchid;
+}
+#reg_btn{
+    width: 360px; 
+    height: 35px;
+    color: white;
+    border-radius: 20px; 
+    background-color: darkorchid; 
+    border-color: darkorchid;
+}

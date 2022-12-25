@@ -1,0 +1,25 @@
+<div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 login" style="margin-top: 60px;">
+                <img src="../../assets/images/luminar_logo.jpg" alt="Luminar Logo" class="mt-4 luminar_logo">
+                <h2 style="margin-top: 80px;">Luminar Technolab</h2>
+                <h6 style="color: darkorchid;">{{aim}}</h6>
+                <form [formGroup]="loginForm">
+                    <input formControlName="email" type="email" name="email" [placeholder]="account" id="login_email" size="45" style="height: 45px; border-radius: 20px" class="mt-4">
+
+                    <div *ngIf="this.loginForm.get('email')?.errors && this.loginForm.get('email')?.touched" style="color: red;">Invalid Email</div>
+
+                    <input formControlName="pswd" type="text" name="password" placeholder="Enter Your Password" id="login_pswd" size="45" style="height: 45px; border-radius: 20px" class="mt-4">
+
+                    <div *ngIf="this.loginForm.get('pswd')?.errors && this.loginForm.get('pswd')?.touched" style="color: red;">Invalid Password</div>
+                    
+                    <input type="button" value="Register" id="login_btn" (click)="login()" class="mt-4 mb-4"><br>
+                </form>
+                
+                <a href="#">Forgot Password</a>&nbsp; OR &nbsp;<a routerLink="register">Register</a>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        
+    </div>
